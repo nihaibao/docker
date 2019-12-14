@@ -6,8 +6,8 @@ FROM nihaibao/php73:latest
 # ---------- env settings ----------
 ##
 #  install and remove building packages
-ENV SWOOLE_VERSION \
-    COMPOSER_VERSION \
+ENV SWOOLE_VERSION="4.4.12" \
+    COMPOSER_VERSION="1.9.0"\
     PHPIZE_DEPS="autoconf dpkg-dev dpkg file g++ gcc libc-dev make php7-dev php7-pear pkgconf re2c pcre-dev pcre2-dev zlib-dev libtool automake"
 
 # update
