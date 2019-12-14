@@ -1,14 +1,12 @@
 FROM nihaibao/php73:latest
 
-ARG swoole
+#ARG swoole
 
 ##
 # ---------- env settings ----------
 ##
-ENV SWOOLE_VERSION=${swoole:-"4.4.13"} \
-    COMPOSER_VERSION=1.8.6 \
-    #  install and remove building packages
-    PHPIZE_DEPS="autoconf dpkg-dev dpkg file g++ gcc libc-dev make php7-dev php7-pear pkgconf re2c pcre-dev pcre2-dev zlib-dev libtool automake"
+#  install and remove building packages
+ENV PHPIZE_DEPS="autoconf dpkg-dev dpkg file g++ gcc libc-dev make php7-dev php7-pear pkgconf re2c pcre-dev pcre2-dev zlib-dev libtool automake"
 
 # update
 RUN set -ex \
