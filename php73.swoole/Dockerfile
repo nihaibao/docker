@@ -6,7 +6,9 @@ FROM nihaibao/php73:latest
 # ---------- env settings ----------
 ##
 #  install and remove building packages
-ENV PHPIZE_DEPS="autoconf dpkg-dev dpkg file g++ gcc libc-dev make php7-dev php7-pear pkgconf re2c pcre-dev pcre2-dev zlib-dev libtool automake"
+ENV SWOOLE_VERSION \
+    COMPOSER_VERSION \
+    PHPIZE_DEPS="autoconf dpkg-dev dpkg file g++ gcc libc-dev make php7-dev php7-pear pkgconf re2c pcre-dev pcre2-dev zlib-dev libtool automake"
 
 # update
 RUN set -ex \
